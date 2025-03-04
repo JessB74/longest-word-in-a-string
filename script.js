@@ -13,10 +13,14 @@ findLongestWord("May the force be with you")  // should return 5.
  */
 
 
-let mainString = "Jessica is learning JavaScript"
-mainString = mainString.split(" ")
+// let mainString = "Jessica is learning JavaScript"
+// mainString = mainString.split(" ")
 
-function longWord(mainString){
+function longWord(String){
+  let mainString = String.split(" ")
+  // mainString = let mainString = "Jessica is learning JavaScript"
+
+
  let longestWord = 0
  for(let i = 0; i<mainString.length;i++){
    if(mainString[i].length>longestWord){
@@ -28,4 +32,3 @@ function longWord(mainString){
 
    return longestWord
 }
- console.log(longWord(mainString))
